@@ -171,7 +171,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--5173--88b6dd69.local-credentialless.webcontainer-api.io",  # Your exact frontend URL
     "https://tight-oriented-mouse.ngrok-free.app",
     "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3-jduj65kf--5173--fc837ba8.local-credentialless.webcontainer-api.io", 
-    "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--5173--fc837ba8.local-credentialless.webcontainer-api.io" # Another URL if needed
+    "https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--5173--fc837ba8.local-credentialless.webcontainer-api.io"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
