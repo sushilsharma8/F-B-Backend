@@ -1,0 +1,84 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Local configuration files
+*.conf
+*.ini
+*.cfg
+*.secrets
+local_settings.py
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Package management
+.pip-log
+pip-log.txt
+pip-delete-this-directory.txt
+.eggs
+*.egg-info
+*.whl
+
+# IDE files
+.idea/
+*.iml
+*.suo
+*.csproj
+*.sln
+*.user
+*.userprefs
+*.cache
+*.log
+*.tmp
+*.bak
+*.swp
+*.pyc
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Database files
+db.sqlite3
+*.db
+*.sqlite
+
+# Other temporary files
+*.tmp
+*.log
+Thumbs.db
+*.pyc
+*.pyo
+*.orig
+*.bak
+*.swp
+*.swo
+.env
+.env.local
