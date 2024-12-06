@@ -51,13 +51,7 @@ INSTALLED_APPS = [
 
     # Third party apps
     'rest_framework',
-    'rest_framework_simplejwt',
-    'rest_framework.authtoken',
     'corsheaders',
-    'dj_rest_auth',
-    'allauth',
-    'allauth.account',
-    'dj_rest_auth.registration',
 ]
 
 MIDDLEWARE = [
@@ -70,8 +64,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
-
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -168,20 +160,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
-}
-
-from datetime import timedelta
-
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=10),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=30),
-    'AUTH_HEADER_TYPES': ('Bearer',),  # Use "Bearer <token>" in headers
 }
 
 CORS_ALLOWED_ORIGINS = [
@@ -232,21 +213,6 @@ CORS_ALLOW_METHODS = [
 # ]
 
 SITE_ID = 1
-
-REST_AUTH = {
-    'USE_JWT': True,
-    'JWT_AUTH_COOKIE': 'auth-token',
-    'JWT_AUTH_REFRESH_COOKIE': 'refresh-token',
-    'USER_DETAILS_SERIALIZER': 'apps.users.serializers.UserSerializer',
-}
-
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_UNIQUE_EMAIL = True
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'  # Set to 'mandatory' in production
-
-# google-chrome --disable-web-security --user-data-dir=/tmp/chrome_dev
 
 LOGGING = {
     'version': 1,
